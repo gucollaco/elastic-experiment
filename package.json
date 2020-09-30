@@ -2,7 +2,26 @@
   "name": "elastic-experiment",
   "version": "1.0.0",
   "main": "index.js",
+  "bin": {
+    "nodemon": "./node_modules/.bin/nodemon"
+  },
+  "scripts": {
+    "start": "nodemon ./app/web/boot.js --exec babel-node"
+  },
   "repository": "https://github.com/gucollaco/elastic-experiment.git",
   "author": "gucollaco",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-mount": "^4.0.0",
+    "koa-respond": "^2.1.0",
+    "koa-router": "^9.4.0",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5"
+  }
 }
