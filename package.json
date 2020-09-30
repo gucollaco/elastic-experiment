@@ -1,0 +1,8 @@
+{
+  "name": "elastic-experiment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gucollaco/elastic-experiment.git",
+  "author": "gucollaco",
+  "license": "MIT"
+}
