@@ -5,6 +5,6 @@ import respond from 'koa-respond'
 import router from './router'
 
 export default new Koa()
-  .use(bodyParser())
   .use(respond())
+  .use(bodyParser({ jsonLimit: '2mb' }))
   .use(mount('/', router))
