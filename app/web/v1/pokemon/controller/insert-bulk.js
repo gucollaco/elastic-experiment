@@ -1,8 +1,6 @@
 import _ from 'lodash'
 import elastic from '../../../../lib/elastic'
 
-const flatten = (ary) => ary.reduce((a, b) => a.concat(Array.isArray(b) ? flatten(b) : b), [])
-
 export default async (ctx) => {
     const body = _.flatten(ctx.request.body.map((value) => {
         return [
